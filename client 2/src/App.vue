@@ -1,14 +1,17 @@
 <template>
   <div id="app">
-   
-    <router-view/>
+    <img alt="Vue logo" src="./assets/logo.png">
+   <router-view/>
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
+import Register from './components/Register.vue'
+
 export default {
   name: 'app'
-}
+} 
 </script>
 
 <style>

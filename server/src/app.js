@@ -9,11 +9,9 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/ting', (req,res) => {
-    console.log('heres');
-    
+app.post('/register', (req,res) => {
   res.send({
-        message:'hello world'
+        message:`${req.body.email} and also ${req.body.password}`
   })
 })
 app.listen(process.env.PORT || 3000)
